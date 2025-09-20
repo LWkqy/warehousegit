@@ -1,0 +1,10 @@
+mv Li/ s_Li
+mv Na/ s_Na
+mv K/ s_K
+mv Rb/ s_Rb
+mv Cs/ s_Cs
+mv Be/ s_Be
+mv Mg/ s_Mg
+mv Ca/ s_Ca
+mv Sr/ s_Sr
+mv Ba/ s_Ba

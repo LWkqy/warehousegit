@@ -1,0 +1,6 @@
+#!/bin/sh
+for i in 0.001 100 200 300 400 500 600 700 800 900 1000 1100 1200
+do
+E=`grep "TOTEN"  OUTCAR-$i | tail -1 | awk '{printf "%12.6f \n", $5 }'`
+echo $E >>comment-enth
+done

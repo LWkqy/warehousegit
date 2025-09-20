@@ -1,0 +1,29 @@
+Global Parameters
+  ISTART =  0        
+  LREAL  =  F
+  ENCUT = 600      
+  PREC   = A 
+  LWAVE  = F       
+  LCHARG = F     
+  ADDGRID= .TRUE.    
+Electronic Relaxation
+  ISMEAR =  0          
+  SIGMA  =  0.05       
+  NELM   =  200           
+  NELMIN =  4           
+  EDIFF  =  1E-08       
+Ionic Relaxation
+  NELMIN =  6          
+  NSW    =  100         
+  IBRION =  2           
+  ISIF   =  2    
+  EDIFFG = -1E-03 
+  
+  GGA = PE
+  ISPIN = 2
+#AMIX = 0.2
+#BMIX = 0.0001 
+#AMIX_MAG = 0.8
+#BMIX_MAG = 0.0001 
+
+  

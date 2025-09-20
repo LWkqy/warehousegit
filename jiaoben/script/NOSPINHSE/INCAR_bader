@@ -1,0 +1,27 @@
+HSE06 Calculation
+LHFCALC= .TRUE.       (Activate HF)
+AEXX   =  0.25        (25% HF exact exchange, adjusted this value to reproduce experimental band gap)
+HFSCREEN= 0.2         (Switch to screened exchange, e.g. HSE06)
+ALGO = Damped        (Electronic Minimisation Algorithm, ALGO=58)
+PRECFOCK = N
+TIME   =  0.4         (Timestep for IALGO5X)
+
+
+Bader Charge Analysis
+LAECHG     = .TRUE.    (Write core charge into CHGCAR file)
+LCHARG     = .TRUE.    (Write CHGCAR file)
+ 
+ENCUT = 600
+EDIFF = 1E-06
+
+ISPIN = 1
+#AMIX = 0.2
+#BMIX = 0.0001 
+#AMIX_MAG = 0.8
+#BMIX_MAG = 0.0001 
+
+
+GGA = PE
+NELM = 200
+NELMIN = 5
+

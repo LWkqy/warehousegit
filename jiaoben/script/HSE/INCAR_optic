@@ -1,0 +1,43 @@
+ SYSTEM =  qvasp 
+
+INCAR-basic
+   ENCUT  = 600
+   NELMIN= 5
+   LREAL = F    ## set to Auto if the atomic number > 20
+
+
+   EDIFF  = 1E-6
+   ISMEAR = 0
+   SIGMA = 0.05
+
+
+   ISPIN = 2    ## For magnetism set
+   #AMIX = 0.2
+   #BMIX = 0.0001 
+   #AMIX_MAG = 0.8
+   #BMIX_MAG = 0.0001 
+
+
+ Optics calculate
+   LREAL=.False. 
+   ISTART = 1
+   ICHARG = 2  
+
+   NEDOS=3000
+   CSHIFT=0.1
+   LOPTICS=.TRUE.
+   NBANDS=56              # Increase NBANDS about 1.5 times
+
+ Usually contains HSE06
+   NELM = 200
+   LHFCALC = .TRUE.
+   HFSCREEN = 0.2
+   AEXX = 0.25
+   ALGO = D
+   TIME = 0.4
+   PRECFOCK= N
+
+   LCHARG = .FALSE.
+   LWAVE  =  F
+
+# Use 'qvasp -opticsd' to deal data (OriginPro)

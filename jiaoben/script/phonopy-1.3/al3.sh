@@ -1,0 +1,9 @@
+mv Li/ s_Li
+mv Na/ s_Na
+mv K/ s_K
+mv Rb/ s_Rb
+mv Cs/ s_Cs
+mv Al/ s_Al
+mv Ga/ s_Ga
+mv In/ s_In
+mv Tl/ s_Tl

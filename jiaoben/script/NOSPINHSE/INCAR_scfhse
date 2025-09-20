@@ -1,0 +1,39 @@
+#Global Parameters
+ISTART =  1            (Read existing wavefunction, if there)
+
+#mag calculation
+ISPIN  =  1            (Non-Spin polarised DFT)
+#AMIX = 0.2
+#BMIX = 0.0001 
+#AMIX_MAG = 0.8
+#BMIX_MAG = 0.0001 
+
+
+# ICHARG =  11         (Non-self-consistent: GGA/LDA band structures)
+
+LREAL  = .FALSE.       (Projection operators: automatic)
+ENCUT  =  600        (Cut-off energy for plane wave basis set, in eV)
+LWAVE  = .TRUE.        (Write WAVECAR or not)
+LCHARG = .TRUE.        (Write CHGCAR or not)
+
+
+#Static Calculation
+ISMEAR =  0            (gaussian smearing method)
+SIGMA  =  0.05         (please check the width of the smearing)
+LORBIT =  10           (PAW radii for projected DOS)
+NEDOS  =  3000         (DOSCAR points)
+NELM   =  200           (Max electronic SCF steps)
+NELMIN = 5
+EDIFF  =  1E-06        (SCF energy convergence, in eV)
+
+NSW = 0
+IBRION = -1
+  
+#HSE06 Calculation
+LHFCALC= .TRUE.       (Activate HF)
+AEXX   =  0.25        (25% HF exact exchange, adjusted this value to reproduce experimental band gap)
+HFSCREEN= 0.2         (Switch to screened exchange, e.g. HSE06)
+ALGO   =  Damped         (Electronic Minimisation Algorithm, ALGO=58)
+TIME   =  0.4         (Timestep for IALGO5X)
+PRECFOCK = N
+GGA = PE 

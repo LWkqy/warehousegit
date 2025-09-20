@@ -1,0 +1,51 @@
+ SYSTEM =  qvasp 
+
+INCAR-basic
+   PREC   = Normal
+   ENCUT  = 600 eV
+   NELMIN= 5
+   LREAL = F    ## set to Auto if the atomic number > 20
+
+#   ALGO = Fast
+   EDIFF  = 1E-6
+  ISMEAR = 0
+   SIGMA = 0.05
+
+#   LDAU=.TRUE.  ## For LDA + U set
+#   LDAUTYPE=2
+#   LDAUL=2 -1
+#   LDAUU=3  0
+#   LDAUJ=0  0
+
+   ISPIN = 2    ## For magnetism set
+#  MAGMOM = 3*1
+ Elastic Modulus
+   NELM = 100
+   NSW=1
+   IBRION=6
+   ISIF=3
+   NFREE=4
+
+   LCHARG = .FALSE.
+   LWAVE  =  F
+
+#   GGA = PE
+
+# The elastic constant is in the OUTCAR: TOTAL ELASTIC MODULI
+
+
+#HSE06 Calculation
+LHFCALC= .TRUE.       (Activate HF)
+AEXX   =  0.25        (25% HF exact exchange, adjusted this value to reproduce experimental band gap)
+HFSCREEN= 0.2         (Switch to screened exchange, e.g. HSE06)
+ALGO   =  Damped         (Electronic Minimisation Algorithm, ALGO=58)
+TIME   =  0.4         (Timestep for IALGO5X)
+PRECFOCK= F           (HF FFT grid)
+
+
+
+
+
+
+
+

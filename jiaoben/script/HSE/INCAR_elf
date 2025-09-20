@@ -1,0 +1,26 @@
+HSE06 Calculation
+LHFCALC= .TRUE.       (Activate HF)
+AEXX   =  0.25        (25% HF exact exchange, adjusted this value to reproduce experimental band gap)
+HFSCREEN= 0.2         (Switch to screened exchange, e.g. HSE06)
+ALGO   =  A         (Electronic Minimisation Algorithm, ALGO=58)
+TIME   =  0.4         (Timestep for IALGO5X)
+PRECFOCK= N           (HF FFT grid)
+# NKRED    = 2        (Reduce k-grid-even only, see also NKREDX, NKREDY and NKREDZ)
+# HFLMAX   = 4        (HF cut-off: 4d, 6f)
+# LDIAG    = .TRUE.   (Diagnolise Eigenvalues)
+ 
+Electron Localization Function
+ISTART =  1            (Read existing wavefunction, if there)
+LELF   = .TRUE.        (Activate ELF)
+ 
+ENCUT = 600
+EDIFF = 1E-06
+
+ISPIN = 2
+#AMIX = 0.2
+#BMIX = 0.0001 
+#AMIX_MAG = 0.8
+#BMIX_MAG = 0.0001 
+
+GGA = PE
+NELM   =  200 
